@@ -6,8 +6,8 @@ export default function Layout({ children }) {
 	return (
 		<>
 			<Head
-				title='JS Frameworks MA4'
-				description='My Module Assignment Yay'
+				title='Next.js Pokedex'
+				description='Building a pokedex in next'
 				author='Sander Trollebø'
 				keywords='Front end, Javascript, react, next'
 			/>
