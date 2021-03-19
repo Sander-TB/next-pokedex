@@ -1,5 +1,7 @@
 ## TODO:
 
+- [x] Fetch all 'mons
+- [x] Fetch each 'mon
 - [ ] Add bulma
 - [ ] Add styles
 - [ ] Add typeColors to types
