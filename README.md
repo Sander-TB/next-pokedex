@@ -1,4 +1,4 @@
-#JS-Frameworks MA4
+# JS-Frameworks MA4
 
 ---
 
@@ -11,8 +11,9 @@ Live version: https://next-pokedex-phi.vercel.app/
 - [x] Fetch each 'mon
 - [x] Add bulma
 - [x] Add styles
-- [ ] Add typeColors to types
 - [x] Deploy
+
+- [ ] Add typeColors to types
 - [ ] Add search functionality
 - [ ] Make Loader component
 - [ ] Add slider to change image to shiny version
