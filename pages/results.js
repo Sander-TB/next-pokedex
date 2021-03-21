@@ -8,22 +8,40 @@ export default function results({ pokemon }) {
 	return (
 		<Layout>
 			<Heading content='Results page' />
-			{pokemon
-				? pokemon.map((pokemon) => {
-						return (
-							<div key={pokemon.name}>
-								<h3>{pokemon.name}</h3>
-								<p>#{pokemon.paddedIndex}</p>
-								<Image
-									src={pokemon.image}
-									alt={pokemon.name}
-									width={200}
-									height={200}
-								/>
-							</div>
-						);
-				  })
-				: "Loading..."}
+			<div className='columns is-multiline'>
+				{pokemon
+					? pokemon.map((pokemon) => {
+							return (
+								<div className='column is-one-quarter'>
+									<div class='card '>
+										<div class='card-image'>
+											<Image
+												src={pokemon.image}
+												alt={pokemon.name}
+												width={200}
+												height={200}
+											/>
+										</div>
+										<div class='card-content'>
+											<div class='media'>
+												<div class='media-content'>
+													<p class='title is-4 is-capitalized'>{pokemon.name}</p>
+													<p class='subtitle is-6'>#{pokemon.paddedIndex}</p>
+												</div>
+											</div>
+
+											<div class='content'>
+												<button className='button is-primary'>
+													View Details(wip)
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							);
+					  })
+					: "Loading..."}
+			</div>
 		</Layout>
 	);
 }

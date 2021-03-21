@@ -3,11 +3,17 @@ import { CgPokemon } from "react-icons/cg";
 
 export default function Nav() {
 	return (
-		<nav className='navbar' role='navigation' aria-label='main navigation'>
+		<nav
+			className='navbar has-background-primary px-6 py-4'
+			role='navigation'
+			aria-label='main navigation'>
 			<div className='navbar-brand'>
-				<a className='navbar-item' href='https://bulma.io'>
-					<h1>Next.js Pokédex</h1>
-					<CgPokemon />
+				<a className="navbar-item">
+				<Link href='/'>
+					<h1 className='title'>
+						Next.js Pokédex
+					</h1>
+				</Link>
 				</a>
 
 				<a
@@ -23,11 +29,22 @@ export default function Nav() {
 			</div>
 
 			<div id='navbarBasicExample' className='navbar-menu'>
-				<div className='navbar-start'>
-					<a className='navbar-item'>Home</a>
-
-					<a className='navbar-item'>About</a>
-					<a className='navbar-item'>Results</a>
+				<div className='navbar-end is-size-5 has-text-black'>
+					<a className="navbar-item">
+						<Link href='/'>
+							Home
+						</Link>
+					</a>
+					<a className="navbar-item">
+						<Link href='/about-us'>
+							About us
+						</Link>
+					</a>
+						<a className="navbar-item">
+						<Link href='/results'>
+							Results
+						</Link>
+					</a>
 				</div>
 			</div>
 		</nav>

@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+
+
+
+$orange: #f25342;
+$darkGray: #343233;
+$black: #000;
+$lightGray: #d8d6d9;
+$skyBlue: #ebfefd;
+$yellow: #fbee5d;
+$lightBlue: #95d6f7;
+$darkerBlue: #3965a4;
+
+$primary: $orange;
+
 @import "~bulma/bulma.sass";
 
 * {
@@ -8,17 +22,21 @@
 	padding: 0;
 }
 
-:root {
-	--nav-color: #f25342;
-	--dark-gray: #343233;
-	--text-color: #000;
-	--light-gray: #d8d6d9;
-	--sky-blue: #ebfefd;
-	--yellow: #fbee5d;
-	--light-blue: #95d6f7;
-	--darker-blue: #3965a4;
+a {
+	color: inherit;
+}
+
+.navbar {
+	a:hover {
+		color: inherit;
+		background-color: $lightGray;
+		border-radius: 5px;
+	}
 }
 
 .results-link {
-	display: flex;
+	a {
+		text-decoration: underline;
+	}
 }
+

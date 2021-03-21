@@ -1,6 +1,5 @@
 import Head from "../Head/Head";
 import Nav from "../../components/Nav/Nav";
-import Footer from "../Footer/Footer";
 
 export default function Layout({ children }) {
 	return (
@@ -12,8 +11,7 @@ export default function Layout({ children }) {
 				keywords='Front end, Javascript, react, next'
 			/>
 			<Nav />
-			<div className='px-5 my-2'>{children}</div>
-			<Footer />
+			<div className='section is-flex-direction-column'>{children}</div>
 		</>
 	);
 }
