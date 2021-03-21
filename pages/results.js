@@ -15,12 +15,16 @@ export default function results({ pokemon }) {
 								<div className='column is-one-quarter'>
 									<div class='card '>
 										<div class='card-image'>
-											<Image
+										{
+											pokemon ? return <Image
 												src={pokemon.image}
 												alt={pokemon.name}
 												width={200}
 												height={200}
-											/>
+											/> : <Image src="https://via.placeholder.com/150" width={200}
+												height={200}
+										}
+											
 										</div>
 										<div class='card-content'>
 											<div class='media'>
