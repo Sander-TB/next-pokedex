@@ -1,7 +1,7 @@
 import Heading from "../components/Heading/Heading";
 import { BASE_URL } from "../constants/api";
 import axios from "axios";
-import Link from "next/Link";
+import Link from "next/link";
 
 export default function results({ pokemon }) {
 	return (
