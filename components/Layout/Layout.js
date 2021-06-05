@@ -1,4 +1,4 @@
-import Head from "next/Head";
+import Head from "next/head";
 import Nav from "../../components/Nav/Nav";
 
 export default function Layout({ title, children }) {
