@@ -1,3 +1,3 @@
 export default function Heading({ content }) {
-	return <h1 className='title is-1'>{content}</h1>;
+	return <h1 className='text-6xl p-10 text-center'>{content}</h1>;
 }
