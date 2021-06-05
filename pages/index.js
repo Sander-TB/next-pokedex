@@ -12,7 +12,7 @@ export default function results({ pokemon }) {
 					return (
 						<div
 							key={index}
-							className='bg-gray-100 shadow-lg rounded-xl grid grid-cols-1 items-center cursor-pointer'>
+							className='bg-gray-100 shadow-lg rounded-xl grid grid-cols-1 cursor-pointer'>
 							<Link href={`/pokemon?id=${index + 1}`}>
 								<a>
 									<img
