@@ -6,7 +6,9 @@ export default function Layout({ title, children }) {
 		<>
 			<Head>{title}</Head>
 			<Nav />
-			<div className='bg-gray-200'>{children}</div>
+			<main className='bg-gray-200 dark:bg-gray-900 px-20 py-10'>
+				{children}
+			</main>
 		</>
 	);
 }

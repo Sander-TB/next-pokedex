@@ -3,9 +3,11 @@ import Layout from "../components/Layout/Layout";
 
 function MyApp({ Component, pageProps }) {
 	return (
-		<Layout title='Next.js Pokedex'>
-			<Component {...pageProps} />
-		</Layout>
+		<div className='dark'>
+			<Layout title='Next.js Pokedex'>
+				<Component {...pageProps} />
+			</Layout>
+		</div>
 	);
 }
 

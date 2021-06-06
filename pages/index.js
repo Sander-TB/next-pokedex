@@ -5,24 +5,30 @@ import Link from "next/link";
 
 export default function results({ pokemon }) {
 	return (
-		<main className='mx-20'>
+		<main>
 			<Heading content='All 898 Pokémon' />
-			<div className='grid grid-cols-3 gap-10'>
+			<div className='grid grid-cols-1 md:grid-cols-3 gap-10'>
 				{pokemon.map((mons, index) => {
 					return (
 						<div
 							key={index}
-							className='bg-gray-100 shadow-lg rounded-xl grid grid-cols-1 cursor-pointer'>
+							className='bg-gray-100 dark:bg-gray-600 shadow-lg rounded-xl grid grid-cols-1 cursor-pointer place-items-stretch'>
 							<Link href={`/pokemon?id=${index + 1}`}>
 								<a>
-									<img
-										src={mons.image}
-										alt={mons.name}
-										loading='lazy'
-										className='w-1/2'
-									/>
-									<h1 className='capitalize font-bold text-2xl'>{mons.name}</h1>
-									<p className='text-gray-400'>#{mons.paddedIndex}</p>
+									<div className='dark:bg-gray-200 bg-white flex justify-center self-center rounded-full w-1/2 mx-auto my-5'>
+										<img
+											src={mons.image}
+											alt={mons.name}
+											loading='lazy'
+											className='w-full'
+										/>
+									</div>
+									<div className='py-5 bg-white dark:bg-gray-800 text-center rounded-b-xl'>
+										<h1 className='capitalize font-bold text-3xl dark:text-gray-100'>
+											{mons.name}
+										</h1>
+										<p className='text-gray-400'>#{mons.paddedIndex}</p>
+									</div>
 								</a>
 							</Link>
 						</div>
